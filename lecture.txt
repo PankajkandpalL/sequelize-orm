@@ -1,0 +1,62 @@
+Database, Why do we use databases? 
+- NOSQL databases
+    - MongoDB
+
+SQL databases
+    - here data is stored in form of rows and columns.
+
+Types of Commands in SQL
+    - DDL
+        - playing with the tables, indexes, users .. so-on. - Alter, Create, Drop
+    - DML
+        - playing with the data in the database - Insert, Update, Select etc...
+
+Why SQL Db?
+    - Structured Manner
+    - Consistency
+
+SQL vs NoSQL
+    - Dynamic Schema
+
+Aggregate functions
+    - count, sum, max, avg --- many more
+
+
+Connecting server with SQL-Database
+
+MySql
+
+ - Sequelize
+    - ORM Library
+
+- Select * from users;
+- select count(*) from users;
+- Forign key, Primary Key, 
+
+
+- Create table
+
+ - provides us the methods to perform same operations.
+    users.create(), users.findAll()
+
+- FE - Deployed
+- BE - not Deployed
+    - static css, static components will get rendered.
+    - sort some data - feature here your fe is dependent on your backend.
+        - crash the page
+        - it goes into the buffering stage
+
+BE - Deployed
+DB - not Deployed/Hosted
+    - BE will be able to able to serve the requests
+    - Sometimes BE will crash,  
+    request -----> Servers
+                -----> processing that request
+                    ---> (middleware) validation is done ----> controller (business logic/CRUD operations)
+                        ----> (fetchUsers) ---> fetching users data from the (local) database
+                            ----> this would crash the server and result in error
+
+- Deploy the app
+    - Cloud Database (hosted databases)
+
+- How can we host our database?
